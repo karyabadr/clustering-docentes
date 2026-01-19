@@ -1,79 +1,105 @@
-# Análisis de Perfiles Docentes mediante T茅cnicas de Clusterizaci贸n
+# 📊 Clustering de Docentes mediante Técnicas de Aprendizaje No Supervisado
 
-## 馃搶 Descripci贸n del proyecto
+Este repositorio contiene el desarrollo de un análisis de **clustering a nivel de docente**, realizado como parte de un trabajo de investigación académica. El objetivo principal es identificar **perfiles de docentes** a partir de información institucional, utilizando técnicas de **aprendizaje no supervisado** en Python.
 
-En las Instituciones de Educaci贸n Superior (IES), los procesos de evaluaci贸n docente generan grandes vol煤menes de informaci贸n que, en la pr谩ctica, suelen utilizarse principalmente con fines administrativos y de cumplimiento normativo. Esto limita su aprovechamiento para la toma de decisiones estrat茅gicas orientadas a la mejora continua y al desarrollo profesional docente.
-
-Este proyecto propone el uso de **t茅cnicas de aprendizaje no supervisado** para analizar los datos de evaluaci贸n docente y del distributivo acad茅mico, con el fin de identificar **perfiles homog茅neos de desempe帽o docente**. Mediante la aplicaci贸n de **K-Means** y **reducci贸n de dimensionalidad con An谩lisis de Componentes Principales (PCA)**, se transforma la informaci贸n institucional en conocimiento accionable para la gesti贸n acad茅mica.
-
-El trabajo forma parte de una investigaci贸n acad茅mica (tesis de maestr铆a) enfocada en el an谩lisis de datos aplicado a la educaci贸n superior.
+El análisis se implementa en un *Jupyter Notebook* y sigue un flujo metodológico estructurado que incluye limpieza de datos, agregaciones, reducción de dimensionalidad y aplicación de algoritmos de clustering.
 
 ---
 
-## 馃幆 Objetivos
+## 🎯 Objetivo del proyecto
 
-### Objetivo general
-Analizar los datos de evaluaci贸n docente mediante t茅cnicas de clusterizaci贸n para identificar perfiles de desempe帽o que permitan proponer acciones de mejora orientadas al desarrollo profesional y a la mejora continua de la calidad educativa en las instituciones de educaci贸n superior.
+Identificar y caracterizar grupos homogéneos de docentes a partir de variables relacionadas con:
 
-### Objetivos espec铆ficos
-- Estructurar los datos de evaluaci贸n docente y del distributivo acad茅mico mediante integraci贸n de datos, imputaci贸n de valores faltantes, normalizaci贸n y codificaci贸n de variables categ贸ricas.
-- Aplicar la t茅cnica de clusterizaci贸n **K-Means** para identificar grupos homog茅neos de docentes en funci贸n de indicadores de desempe帽o acad茅mico y operativo.
-- Interpretar los perfiles resultantes a trav茅s del an谩lisis comparativo de sus caracter铆sticas y traducir los hallazgos en propuestas de mejora.
+- Evaluación docente  
+- Carga académica y distributivos  
+- Formación y características profesionales  
 
----
-
-## 馃梻锔?Descripci贸n del conjunto de datos
-
-El an谩lisis se basa en la integraci贸n de informaci贸n proveniente de bases de datos institucionales, que incluyen:
-
-- Resultados de evaluaci贸n docente
-- Distributivo acad茅mico y carga docente
-- Tipo y estabilidad contractual
-- Distribuci贸n de actividades (docencia, gesti贸n y formaci贸n)
-
-**Alcance del estudio:**
-- Total de docentes analizados: **973**
-- Periodo acad茅mico: *marzo 鈥?agosto 2025*
-
-> 鈿狅笍 Por razones de confidencialidad institucional, los datos originales no se encuentran disponibles p煤blicamente.
+Los resultados buscan apoyar procesos de **toma de decisiones institucionales**, planificación académica y análisis exploratorio en contextos educativos.
 
 ---
 
-## 馃И Metodolog铆a
+## 🗂️ Estructura del repositorio
 
-1. Preparaci贸n de datos  
-2. Reducci贸n de dimensionalidad (PCA)  
-3. Clusterizaci贸n (K-Means)  
-4. Interpretaci贸n de perfiles docentes  
-
----
-
-## 馃搳 Principales resultados
-
-- Identificaci贸n de **tres clusters docentes** con perfiles diferenciados.
-- Diferencias significativas en desempe帽o, carga acad茅mica y estabilidad contractual.
-- Base para la definici贸n de acciones de mejora diferenciadas.
+```
+├── Clustering docentes.ipynb   # Notebook principal con todo el análisis
+├── README.md                  # Descripción general del proyecto
+└── Datos/                      # Carpeta con los conjuntos de datos
+```
 
 ---
 
-## 馃洜锔?Tecnolog铆as utilizadas
+## 🧾 Descripción de los datos
 
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib / Seaborn  
+El análisis parte de la integración de **múltiples fuentes de datos institucionales**, entre ellas:
+
+- Resultados de heteroevaluación docente por asignatura
+- Resultados de coevaluación docente por pares y autoridades
+- Información de distributivos académicos
+- Datos de formación docente
+- Análisis de sentimiento sobre comentarios de estudiantes
+
+Uno de los archivos contiene más de **70.000 registros**, por lo que se realiza inicialmente un proceso de:
+- Limpieza de datos
+- Normalización y tipificación de variables
+- Agregación a nivel de docente
+
+Posteriormente, estos datos se integran con otras las otras fuentes de menor tamaño.
 
 ---
 
-## 馃搫 Licencia
+## 🔄 Metodología aplicada
 
-Uso acad茅mico y de investigaci贸n. Citar adecuadamente.
+El flujo de trabajo seguido en el notebook es el siguiente:
+
+1. Carga y exploración inicial de los datos  
+2. Limpieza y preprocesamiento  
+3. Agregación de información a nivel de docente  
+4. Selección y transformación de variables  
+5. Reducción de dimensionalidad mediante PCA  
+6. Aplicación de algoritmos de clustering (*K-means*)  
+7. Análisis y caracterización de los clusters obtenidos  
 
 ---
 
-## 馃懇鈥嶐煄?Autora
+## 🛠️ Tecnologías y librerías utilizadas
+
+- Python 3.x  
+- pandas  
+- numpy  
+- scikit-learn  
+- matplotlib  
+- seaborn  
+
+---
+
+## ▶️ Ejecución del proyecto
+
+1. Clona este repositorio:
+   ```bash
+   git clone <url-del-repositorio>
+   ```
+
+2. Abre el notebook:
+   ```bash
+   jupyter notebook "Clustering docentes.ipynb"
+   ```
+
+3. Ejecuta las celdas en orden para reproducir el análisis.
+
+---
+
+## 📌 Notas adicionales
+
+- El proyecto está orientado a un contexto académico.
+- Los datos utilizados están anonimizados por motivos de confidencialidad.
+
+---
+
+## 👩‍🎓 Autora
 
 **Karina Abad**  
-Maestr铆a en Ciencia de Datos
+Maestría en Inteligencia de Negocios y Ciencia de Datos
 
+---
+
+✨ Este proyecto forma parte de un proceso de investigación y puede seguir evolucionando con nuevas variables, algoritmos y análisis.
