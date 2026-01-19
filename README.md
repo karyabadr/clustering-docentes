@@ -1,6 +1,6 @@
-# 📊 Clustering de Docentes mediante Técnicas de Aprendizaje No Supervisado
+# 📊 Segmentación de Docentes mediante Técnicas de Aprendizaje No Supervisado (Clustering)
 
-Este repositorio contiene el desarrollo de un análisis de **clustering a nivel de docente**, realizado como parte de un trabajo de investigación académica. El objetivo principal es identificar **perfiles de docentes** a partir de información institucional, utilizando técnicas de **aprendizaje no supervisado** en Python.
+Este repositorio contiene el desarrollo de un análisis de **clustering a nivel de docente**, realizado como parte de un trabajo de investigación académica. El objetivo principal es identificar **perfiles de docentes** a partir de información institucional de evaluación del desempeño, utilizando técnicas de **aprendizaje no supervisado** en Python.
 
 El análisis se implementa en un *Jupyter Notebook* y sigue un flujo metodológico estructurado que incluye limpieza de datos, agregaciones, reducción de dimensionalidad y aplicación de algoritmos de clustering.
 
@@ -102,4 +102,4 @@ Maestría en Inteligencia de Negocios y Ciencia de Datos
 
 ---
 
-✨ Este proyecto forma parte de un proceso de investigación y puede seguir evolucionando con nuevas variables, algoritmos y análisis.
+
